@@ -6,7 +6,7 @@ PROJECT_NAME="acme.sh"
 
 PROJECT_ENTRY="acme.sh"
 
-PROJECT="https://github.com/acmesh-official/$PROJECT_NAME"
+PROJECT="https://github.com/wisekeylab/$PROJECT_NAME"
 
 DEFAULT_INSTALL_HOME="$HOME/.$PROJECT_NAME"
 
@@ -35,8 +35,11 @@ CA_SSLCOM_ECC="https://acme.ssl.com/sslcom-dv-ecc"
 CA_GOOGLE="https://dv.acme-v02.api.pki.goog/directory"
 CA_GOOGLE_TEST="https://dv.acme-v02.test-api.pki.goog/directory"
 
-DEFAULT_CA=$CA_ZEROSSL
-DEFAULT_STAGING_CA=$CA_LETSENCRYPT_V2_TEST
+CA_WISEKEY_V1="https://acme.certifyid.com/directory"
+CA_WISEKEY_V1_TEST="https://acme.certifyiddemo.com/directory"
+
+DEFAULT_CA=$CA_WISEKEY_V1
+DEFAULT_STAGING_CA=$CA_WISEKEY_V1_TEST
 
 CA_NAMES="
 ZeroSSL.com,zerossl
@@ -47,9 +50,11 @@ BuyPass.com_test,buypass_test,buypasstest
 SSL.com,sslcom
 Google.com,google
 Google.com_test,googletest,google_test
+wisekey.com, wisekey
+wisekey.com_test, wisekey_test
 "
 
-CA_SERVERS="$CA_ZEROSSL,$CA_LETSENCRYPT_V2,$CA_LETSENCRYPT_V2_TEST,$CA_BUYPASS,$CA_BUYPASS_TEST,$CA_SSLCOM_RSA,$CA_GOOGLE,$CA_GOOGLE_TEST"
+CA_SERVERS="$CA_ZEROSSL,$CA_LETSENCRYPT_V2,$CA_LETSENCRYPT_V2_TEST,$CA_BUYPASS,$CA_BUYPASS_TEST,$CA_SSLCOM_RSA,$CA_GOOGLE,$CA_GOOGLE_TEST, $CA_WISEKEY_V1, $CA_WISEKEY_V1_TEST"
 
 DEFAULT_USER_AGENT="$PROJECT_NAME/$VER ($PROJECT)"
 
