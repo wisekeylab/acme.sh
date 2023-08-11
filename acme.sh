@@ -57,10 +57,10 @@ SSL.com,sslcom
 Google.com,google
 Google.com_test,googletest,google_test
 wisekey.com_dv,wisekey_dv
-wisekey.com_ov,wisekey_ov
-wisekey.com_ev,wisekey_ev
 wisekey.com_dv_test,wisekey_dv_test
+wisekey.com_ov,wisekey_ov
 wisekey.com_ov_test,wisekey_ov_test
+wisekey.com_ev,wisekey_ev
 wisekey.com_ev_test,wisekey_ev_test
 "
 
