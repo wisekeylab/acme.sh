@@ -95,7 +95,7 @@ https://github.com/acmesh-official/acmetest
 
 # Supported CA
 
-- [WISeKey CA](https://wisekey.com)(default)
+- [WISeKey CA]([https://wisekey.com](https://github.com/wisekeylab/acme.sh/wiki/WISeKey-CA)) (Default for this fork!)
 - [ZeroSSL.com CA](https://github.com/acmesh-official/acme.sh/wiki/ZeroSSL.com-CA)
 - Letsencrypt.org CA
 - [BuyPass.com CA](https://github.com/acmesh-official/acme.sh/wiki/BuyPass.com-CA)
